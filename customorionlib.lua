@@ -480,8 +480,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.IntroText = WindowConfig.IntroText or "Oneshot Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://9022972057"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://9022972057"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://11681392566"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://11681392566"
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
