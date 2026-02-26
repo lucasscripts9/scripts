@@ -10,6 +10,6 @@ local mobile = abilities:WaitForChild("mobile")
 
 local dash = mobile:WaitForChild("Dash")
 
-task.wait(3)
+task.wait(1)
 
 dash:Destroy()
