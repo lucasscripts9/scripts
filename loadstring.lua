@@ -1,16 +1,15 @@
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/lucasscripts9/scripts/refs/heads/main/mobilitylordv1.lua')))()
 
-task.wait(3)
-
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
-local dash = playerGui:FindFirstChild("gui")
-	and playerGui.gui:FindFirstChild("ingameHud")
-	and playerGui.gui.ingameHud:FindFirstChild("abilities")
-	and playerGui.gui.ingameHud.Abilities:FindFirstChild("mobile")
-	and playerGui.gui.ingameHud.Abilities.mobile:FindFirstChild("Dash")
+local gui = playerGui:WaitForChild("gui")
+local ingameHud = gui:WaitForChild("ingameHud")
+local abilities = ingameHud:WaitForChild("abilities")
+local mobile = abilities:WaitForChild("mobile")
 
-if dash then
-	dash:Destroy()
-end
+local dash = mobile:WaitForChild("Dash")
+
+task.wait(3)
+
+dash:Destroy()
